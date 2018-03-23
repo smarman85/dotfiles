@@ -1,0 +1,18 @@
+ForwardAgent yes
+ServerAliveInterval 300
+ServerAliveCountMax 2
+HashKnownHosts no
+UserKnownHostsFile /dev/null
+StrictHostKeyChecking no
+IdentityFile ~/.ssh/id_rsa
+LogLevel ERROR
+
+Host github.com
+    HostName github.com
+    User smarman85
+    IdentityFile ~/.ssh/id_rsa_git
+
+Host rasp
+    HostName 192.168.1.41
+    User pi
+
